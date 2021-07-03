@@ -1,13 +1,25 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  title: MyString1
   description: MyText
-  image_url: MyString
+  image_url: ridocker.jpg
   price: 9.99
 
 two:
-  title: MyString
+  title: MyString2
   description: MyText
-  image_url: MyString
+  image_url: ridocker.jpg
   price: 9.99
+
+ruby:
+  title: Ruby
+  description: Sample description
+  image_url: ridocker.jpg
+  price: 10.99
+
+short_title:
+  title: ru
+  description: short title
+  image_url: ridocker.jpg
+  price: 20.00
