@@ -52,4 +52,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
       post products_url, params: { product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: "ru" } }
     end
   end
+
+  test "can't delete prpoduct in cart" do
+    assert_difference('Product.count', 0) do
+      delete product_url(products(:two))
+    end
+    assert_redirected_to products_url
+  end
 end

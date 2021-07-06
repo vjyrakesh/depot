@@ -16,3 +16,8 @@ Product.create!(title: 'Book 7', description: %{<p><em>Book 1</em> This is a sam
 Product.create!(title: 'Book 8', description: %{<p><em>Book 1</em> This is a sample text from a sample book purely loaded for test purposes.</p>}, image_url: 'ridocker.jpg', price: 90.00)
 Product.create!(title: 'Book 9', description: %{<p><em>Book 1</em> This is a sample text from a sample book purely loaded for test purposes.</p>}, image_url: 'ridocker.jpg', price: 20.00)
 Product.create!(title: 'Book 10', description: %{<p><em>Book 1</em> This is a sample text from a sample book purely loaded for test purposes.</p>}, image_url: 'ridocker.jpg', price: 25.00)
+Student.create!(name: 'Alice', age: 20)
+Student.create!(name: 'Bob', age: 20)
+Student.create!(name: 'Carol', age: 20)
+Student.create!(name: 'Dan', age: 20)
+Student.create!(name: 'Elizabeth', age: 20)
