@@ -9,6 +9,10 @@ class CartsController < ApplicationController
 
   # GET /carts/1 or /carts/1.json
   def show
+    if @cart.id != Integer(params[:id])
+      logger.error "Trying to access others cart #{params[:id]} session cart: #{@cart.id}"
+      redirect_to store_index_url, notice: 'You cannot view that cart'
+    end
   end
 
   # GET /carts/new
